@@ -107,6 +107,13 @@ let g:flake8_max_complexity=10
 autocmd BufWritePost *.py call Flake8()
 
 
+""" jedi-vim
+"
+autocmd FileType python setlocal completeopt-=preview
+let g:jedi#popup_on_dot = 0
+
+
+
 """ Colors
 "
 silent!colorscheme molokai
