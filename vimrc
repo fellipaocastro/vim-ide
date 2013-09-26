@@ -97,6 +97,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'spf13/PIV'
 " ...
 
+filetype on
 filetype plugin indent on     " required!
 
 
@@ -124,7 +125,6 @@ hi TabLine ctermfg=Gray ctermbg=Black
 hi TabLineSel ctermfg=White ctermbg=Red
 set t_Co=256
 syntax on
-syntax enable
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 
