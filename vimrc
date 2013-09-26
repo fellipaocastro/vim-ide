@@ -94,6 +94,7 @@ Bundle 'spf13/vim-colors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'spf13/PIV'
 " ...
 
 filetype plugin indent on     " required!
