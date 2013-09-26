@@ -152,3 +152,14 @@ noremap <C-h> :wincmd h<CR>
 noremap <C-j> :wincmd j<CR>
 noremap <C-k> :wincmd k<CR>
 noremap <C-l> :wincmd l<CR>
+
+
+""" Highlight excess line length
+"
+augroup vimrc_autocmds
+    autocmd!
+    " highlight characters past column 99
+    autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType python match Excess /\%99v.*/
+    autocmd FileType python set nowrap
+augroup END
