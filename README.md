@@ -8,9 +8,11 @@ Vim settings otimizado para uso com Python/Django.
 
 ## Instalação ##
  
-1. Faça um clone do projeto para ~/.vim-ide:
+1. Faça um clone do projeto para ~/.vim-ide e inicialize os sub-módulos:
         
         git clone https://github.com/rafael84/vim-ide.git ~/.vim-ide
+        git submodule init
+        git submodule update
         
 2. Crie links simbólicos para o arquivo .vimrc e para o diretório .vim:
 
