@@ -134,6 +134,14 @@ let g:Powerline_symbols='fancy'
 let NERDTreeIgnore = ['\.pyc$']
 
 
+""" CTRLP
+"
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
+
 """ Colors
 "
 silent!colorscheme molokai
