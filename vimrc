@@ -124,6 +124,11 @@ let g:syntastic_mode_map = { 'mode': 'active',
 let g:syntastic_python_checkers=['flake8']
 
 
+""" Powerline
+"
+let g:Powerline_symbols='fancy'
+
+
 """ Colors
 "
 silent!colorscheme molokai
@@ -136,6 +141,7 @@ set t_Co=256
 syntax on
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
+hi visual ctermfg=black ctermbg=lightblue
 
 
 """ Key Mappings
