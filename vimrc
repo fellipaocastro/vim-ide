@@ -105,7 +105,6 @@ filetype plugin indent on     " required!
 "
 let g:flake8_max_line_length=99
 let g:flake8_max_complexity=10
-autocmd BufWritePost *.py call Flake8()
 
 
 """ jedi-vim
@@ -113,6 +112,16 @@ autocmd BufWritePost *.py call Flake8()
 autocmd FileType python setlocal completeopt-=preview
 let g:jedi#popup_on_dot = 0
 
+
+""" syntastic
+"
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['python', 'php'],
+                           \ 'passive_filetypes': ['puppet'] }
+let g:syntastic_python_checkers=['flake8']
 
 
 """ Colors
@@ -127,6 +136,7 @@ set t_Co=256
 syntax on
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
+
 
 """ Key Mappings
 "
