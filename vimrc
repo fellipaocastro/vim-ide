@@ -129,6 +129,11 @@ let g:syntastic_python_checkers=['flake8']
 let g:Powerline_symbols='fancy'
 
 
+""" NERDTree
+"
+let NERDTreeIgnore = ['\.pyc$']
+
+
 """ Colors
 "
 silent!colorscheme molokai
