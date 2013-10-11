@@ -187,6 +187,12 @@ noremap <C-k> :wincmd k<CR>
 noremap <C-l> :wincmd l<CR>
 
 
+" Indent/unindent highlighted block (and maintain highlight)
+"
+vnoremap <Tab>    >gv
+vnoremap <S-Tab>  <gv
+
+
 """ Highlight excess line length
 "
 augroup vimrc_autocmds
