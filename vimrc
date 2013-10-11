@@ -24,6 +24,10 @@ set shiftround              	" rounds indent to a multiple of shiftwidth
 set matchpairs+=<:>         	" show matching <> (html mainly) as well
 set lazyredraw                  " do not redraw while running macros (much faster) (LazyRedraw)
 
+""" Mouse settings
+"
+set mouse=a
+
 """ Ignore these files when completing
 "
 set wildignore+=*.o,*.obj,.git,*.pyc
