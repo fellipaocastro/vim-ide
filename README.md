@@ -35,24 +35,24 @@ repetir os passos 1 a 4, listados acima.
 
 ## PLUGINS ##
 
-* **'tpope/vim-fugitive'** - Integração com GIT.
-* **'Lokaltog/vim-powerline'** - Barra de status incrementada.
-* **'vim-scripts/surround.vim'** - Diversos atalhos úteis envolvendo "surroundings": parenteses, colchetes, tags, e muito mais.
-* **'vim-scripts/nginx.vim'** - Highlight de configurações do NGINX.
-* **'nvie/vim-flake8'** - Validação de código Python.
-* **'majutsushi/tagbar'** - Janela que mostra a estrutura do arquivo atual (classes, funções variáveis, etc). 
-* **'pangloss/vim-javascript'** - Melhor tratamento para código javascript, especialmente quando este está embutido em uma página HTML.
-* **'scrooloose/syntastic'** - Aponta onde há problemas no código fonte atual.
-* **'rstacruz/sparkup' - Disponibiliza diversos templates para arquivos HTML.
-* **'vim-scripts/tComment'** - Facilita comentar / descomentar blocos de código.
-* **'kien/ctrlp.vim'** - Excelente para achar um arquivo rapidamente, digitando caracteres que façam parte do path do mesmo.
-* **'docunext/closetag.vim'** - Fecha tags automaticamente, especialmente útil para páginas HTML.
-* **'Rykka/riv.vim'** - Excelente para se trabalhar com textos utilizando a linguagem de marcação reST.
-* **'spf13/vim-colors'** - Alguns colorschemes interessantes.
-* **'scrooloose/nerdtree'** - Facilita a manipulação de diretórios e arquivos dentro do próprio VIM.
-* **'davidhalter/jedi-vim'** - Auto complete inteligente.
-* **'Lokaltog/vim-easymotion'** - Ajuda na movimentação para um ponto específico da tela.
-* **'spf13/PIV'** - Facilita a vida de programadores PHP.
+* **tpope/vim-fugitive** - Integração com GIT.
+* **Lokaltog/vim-powerline** - Barra de status incrementada.
+* **vim-scripts/surround.vim** - Diversos atalhos úteis envolvendo "surroundings": parenteses, colchetes, tags, e muito mais.
+* **vim-scripts/nginx.vim** - Highlight de configurações do NGINX.
+* **nvie/vim-flake8** - Validação de código Python.
+* **majutsushi/tagbar** - Janela que mostra a estrutura do arquivo atual (classes, funções variáveis, etc). 
+* **pangloss/vim-javascript** - Melhor tratamento para código javascript, especialmente quando este está embutido em uma página HTML.
+* **scrooloose/syntastic** - Aponta onde há problemas no código fonte atual.
+* **rstacruz/sparkup** - Disponibiliza diversos templates para arquivos HTML.
+* **vim-scripts/tComment** - Facilita comentar / descomentar blocos de código.
+* **kien/ctrlp.vim** - Excelente para achar um arquivo rapidamente, digitando caracteres que façam parte do path do mesmo.
+* **docunext/closetag.vim** - Fecha tags automaticamente, especialmente útil para páginas HTML.
+* **Rykka/riv.vim** - Excelente para se trabalhar com textos utilizando a linguagem de marcação reST.
+* **spf13/vim-colors** - Alguns colorschemes interessantes.
+* **scrooloose/nerdtree** - Facilita a manipulação de diretórios e arquivos dentro do próprio VIM.
+* **davidhalter/jedi-vim** - Auto complete inteligente.
+* **Lokaltog/vim-easymotion** - Ajuda na movimentação para um ponto específico da tela.
+* **spf13/PIV** - Facilita a vida de programadores PHP.
 
 
 ## ATALHOS ##
