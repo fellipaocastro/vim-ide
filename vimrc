@@ -161,6 +161,11 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 hi visual ctermfg=black ctermbg=lightblue
 
 
+""" Disable Match Paren
+"
+let loaded_matchparen = 1
+
+
 """ Key Mappings
 "
 
