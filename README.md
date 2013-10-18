@@ -1,6 +1,7 @@
 # VIM-IDE #
 
 Vim settings otimizado para uso com Python/Django, PHP, Javascript, HTML e CSS.
+Foo
 
 ![vim-ide](https://github.com/rafael84/vim-ide/raw/master/img/overview.png)
 
