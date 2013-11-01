@@ -98,7 +98,6 @@ Bundle 'spf13/vim-colors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'spf13/PIV'
 " ...
 
 filetype on
@@ -150,15 +149,16 @@ let g:ctrlp_prompt_mappings = {
 "
 silent!colorscheme molokai
 set colorcolumn=99
+set t_Co=256
+syntax on
+set cursorline
 hi ColorColumn ctermbg=red guibg=red
 hi TabLineFill ctermfg=LightGray ctermbg=Black
 hi TabLine ctermfg=Gray ctermbg=Black
 hi TabLineSel ctermfg=White ctermbg=Red
-set t_Co=256
-syntax on
-set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 hi visual ctermfg=black ctermbg=lightblue
+hi Normal ctermbg=none
 
 
 """ Disable Match Paren
