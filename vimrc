@@ -98,6 +98,7 @@ Bundle 'spf13/vim-colors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Shougo/neocomplcache.vim'
 " ...
 
 filetype on
@@ -143,6 +144,10 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+
+""" NeoComplCache
+"
+let g:neocomplcache_enable_at_startup = 1
 
 
 """ Colors
