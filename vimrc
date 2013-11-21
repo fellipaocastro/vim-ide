@@ -215,3 +215,11 @@ augroup vimrc_autocmds
     autocmd FileType python match Excess /\%99v.*/
     autocmd FileType python set nowrap
 augroup END
+
+
+""" Include ~/.vimrc_extra, if file exists
+"
+let vimrc_extra=expand("~/.vimrc_extra")
+if filereadable(vimrc_extra)
+    exec ":source " . vimrc_extra
+endif

@@ -33,6 +33,21 @@ OBS.: Para atualizar uma instalação já existente, o melhor é remover o diret
 repetir os passos 1 a 4, listados acima.
 
 
+## CUSTOMIZAÇÃO ##
+
+Caso deseje sobrescrever alguma configuração, crie um arquivo .vimrc_extra no seu diretório home,
+isto é: 
+
+    touch ~/.vimrc_extra
+    
+Este arquivo, caso exista, será carregado após o arquivo ~/.vimrc. Assim, você evita possíveis
+conflitos de merge ao atualizar o seu vim-ide.
+
+Como exemplo de customização, você poderia alterar o esquema de cores:
+
+    echo "silent!colorscheme elflord" >> ~/.vimrc_extra
+
+
 ## PLUGINS ##
 
 * **tpope/vim-fugitive** - Integração com GIT.
