@@ -176,8 +176,8 @@ let loaded_matchparen = 1
 
 " F2 toogles TabBar
 nmap <F2> :NERDTreeToggle<CR>
-" lf finds the current file in the tree
-nmap lf :NERDTreeFind<CR>
+" LF finds the current file in the tree
+nmap LF :NERDTreeFind<CR>
 
 " F3 toogles TabBar
 nmap <F3> :TagbarToggle<CR>
