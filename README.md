@@ -78,3 +78,4 @@ QUALQUER| CTRL + h              | Vai para a janela da esquerda
 QUALQUER| CTRL + l              | Vai para a janela da direita
 QUALQUER| CTRL + j              | Vai para a janela de baixo
 QUALQUER| CTRL + k              | Vai para a janela de cima
+NORMAL  | lf                    | Localiza o arquivo atual no NERDTree
