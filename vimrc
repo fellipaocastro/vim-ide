@@ -99,11 +99,18 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Shougo/neocomplcache.vim'
+Bundle 'othree/javascript-libraries-syntax.vim'
 " ...
 
 filetype on
 filetype plugin indent on     " required!
 
+""" javascript-libraries-syntax
+"
+let g:used_javascript_libs = 'jquery,angularjs,requirejs'
+autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 1
 
 """ Flake8
 "
