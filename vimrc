@@ -100,6 +100,8 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Shougo/neocomplcache.vim'
 Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'groenewege/vim-less'
 " ...
 
 filetype on
