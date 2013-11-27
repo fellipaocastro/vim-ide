@@ -102,6 +102,7 @@ Bundle 'Shougo/neocomplcache.vim'
 Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
+Bundle 'jistr/vim-nerdtree-tabs'
 " ...
 
 filetype on
@@ -184,7 +185,7 @@ let loaded_matchparen = 1
 "
 
 " F2 toogles TabBar
-nmap <F2> :NERDTreeToggle<CR>
+nmap <F2> :NERDTreeTabsToggle<CR>
 " LF finds the current file in the tree
 nmap LF :NERDTreeFind<CR>
 
