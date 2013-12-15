@@ -103,6 +103,7 @@ Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'tmhedberg/matchit'
 " ...
 
 filetype on
