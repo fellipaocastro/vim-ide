@@ -218,6 +218,11 @@ vnoremap <Tab>    >gv
 vnoremap <S-Tab>  <gv
 
 
+" Map Ctrl+P to duplicate visual selection 
+"
+vmap <C-p> y'>p
+
+
 """ Highlight excess line length
 "
 augroup vimrc_autocmds
