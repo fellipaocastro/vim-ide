@@ -106,10 +106,21 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/matchit'
+Bundle 'junegunn/vim-easy-align'
+
 " ...
 
 filetype on
 filetype plugin indent on     " required!
+
+
+""" Vim-Easy-Align
+"
+" Start interactive EasyAlign in visual mode
+vmap <Enter> <Plug>(EasyAlign)
+" Start interactive EasyAlign with a Vim movement
+nmap <Leader>a <Plug>(EasyAlign)
+
 
 """ javascript-libraries-syntax
 "
