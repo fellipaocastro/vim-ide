@@ -108,6 +108,7 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tmhedberg/matchit'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'othree/html5.vim'
+Bundle 'rodjek/vim-puppet'
 
 " ...
 
