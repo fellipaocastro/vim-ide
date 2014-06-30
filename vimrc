@@ -109,6 +109,7 @@ Bundle 'tmhedberg/matchit'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'othree/html5.vim'
 Bundle 'rodjek/vim-puppet'
+Bundle 'mileszs/ack.vim'
 
 " ...
 
@@ -255,3 +256,8 @@ let vimrc_extra=expand("~/.vimrc_extra")
 if filereadable(vimrc_extra)
     exec ":source " . vimrc_extra
 endif
+
+
+""" Silver Searcher
+" https://github.com/ggreer/the_silver_searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
