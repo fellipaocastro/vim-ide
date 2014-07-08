@@ -84,7 +84,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'vim-scripts/surround.vim'
 Bundle 'vim-scripts/nginx.vim'
 Bundle 'nvie/vim-flake8'
@@ -153,11 +153,6 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['python', 'php'],
                            \ 'passive_filetypes': ['puppet'] }
 let g:syntastic_python_checkers=['flake8']
-
-
-""" Powerline
-"
-let g:Powerline_symbols='fancy'
 
 
 """ NERDTree
@@ -250,14 +245,18 @@ augroup vimrc_autocmds
 augroup END
 
 
+""" Silver Searcher
+" https://github.com/ggreer/the_silver_searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+
+""" vim air-line
+"
+let g:airline_powerline_fonts = 1
+
 """ Include ~/.vimrc_extra, if file exists
 "
 let vimrc_extra=expand("~/.vimrc_extra")
 if filereadable(vimrc_extra)
     exec ":source " . vimrc_extra
 endif
-
-
-""" Silver Searcher
-" https://github.com/ggreer/the_silver_searcher
-let g:ackprg = 'ag --nogroup --nocolor --column'
