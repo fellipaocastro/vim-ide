@@ -253,14 +253,18 @@ augroup vimrc_autocmds
 augroup END
 
 
+""" Silver Searcher
+" https://github.com/ggreer/the_silver_searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+
+""" vim air-line
+"
+let g:airline_powerline_fonts = 1
+
 """ Include ~/.vimrc_extra, if file exists
 "
 let vimrc_extra=expand("~/.vimrc_extra")
 if filereadable(vimrc_extra)
     exec ":source " . vimrc_extra
 endif
-
-
-""" Silver Searcher
-" https://github.com/ggreer/the_silver_searcher
-let g:ackprg = 'ag --nogroup --nocolor --column'
