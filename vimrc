@@ -84,9 +84,10 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'vim-scripts/surround.vim'
 Bundle 'vim-scripts/nginx.vim'
+Bundle 'vim-scripts/apachelogs.vim'
 Bundle 'nvie/vim-flake8'
 Bundle 'majutsushi/tagbar'
 Bundle 'pangloss/vim-javascript'
@@ -110,6 +111,7 @@ Bundle 'junegunn/vim-easy-align'
 Bundle 'othree/html5.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'mileszs/ack.vim'
+Bundle "ekalinin/Dockerfile.vim"
 
 " ...
 
@@ -155,9 +157,11 @@ let g:syntastic_mode_map = { 'mode': 'active',
 let g:syntastic_python_checkers=['flake8']
 
 
-""" Powerline
-"
-let g:Powerline_symbols='fancy'
+" """ Vim-AirLine
+" "
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
 
 
 """ NERDTree
@@ -191,7 +195,6 @@ hi TabLine ctermfg=Gray ctermbg=Black
 hi TabLineSel ctermfg=White ctermbg=Red
 hi CursorLine term=bold cterm=bold guibg=Grey40
 hi visual ctermfg=black ctermbg=lightblue
-hi Normal ctermbg=none
 
 
 """ Disable Match Paren
