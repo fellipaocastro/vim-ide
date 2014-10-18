@@ -74,44 +74,46 @@ set foldlevel=99
 
 
 
-""" VUNDLE
+""" Vim-Plug
 "
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !mkdir -p ~/.vim/autoload
+    silent !curl -fLo ~/.vim/autoload/plug.vim
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall
+endif
 
-Bundle 'gmarik/vundle'
-
-" My Bundles here:
-"
-Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
-Bundle 'vim-scripts/surround.vim'
-Bundle 'vim-scripts/nginx.vim'
-Bundle 'vim-scripts/apachelogs.vim'
-Bundle 'nvie/vim-flake8'
-Bundle 'majutsushi/tagbar'
-Bundle 'pangloss/vim-javascript'
-Bundle 'scrooloose/syntastic'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'vim-scripts/tComment'
-Bundle 'kien/ctrlp.vim'
-Bundle 'docunext/closetag.vim'
-Bundle 'Rykka/riv.vim'
-Bundle 'spf13/vim-colors'
-Bundle 'scrooloose/nerdtree'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Shougo/neocomplcache.vim'
-Bundle 'othree/javascript-libraries-syntax.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'groenewege/vim-less'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'tmhedberg/matchit'
-Bundle 'junegunn/vim-easy-align'
-Bundle 'othree/html5.vim'
-Bundle 'rodjek/vim-puppet'
-Bundle 'mileszs/ack.vim'
-Bundle "ekalinin/Dockerfile.vim"
+call plug#begin('~/.vim/plugged')
+    Plug 'lokaltog/vim-easymotion'
+    Plug 'rykka/riv.vim'
+    Plug 'bling/vim-airline'
+    Plug 'davidhalter/jedi-vim'
+    Plug 'docunext/closetag.vim'
+    Plug 'ekalinin/dockerfile.vim'
+    Plug 'groenewege/vim-less'
+    Plug 'jistr/vim-nerdtree-tabs'
+    Plug 'junegunn/vim-easy-align'
+    Plug 'kchmck/vim-coffee-script'
+    Plug 'kien/ctrlp.vim'
+    Plug 'majutsushi/tagbar'
+    Plug 'mileszs/ack.vim'
+    Plug 'nvie/vim-flake8'
+    Plug 'othree/html5.vim'
+    Plug 'othree/javascript-libraries-syntax.vim'
+    Plug 'pangloss/vim-javascript'
+    Plug 'rodjek/vim-puppet'
+    Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+    Plug 'scrooloose/nerdtree'
+    Plug 'scrooloose/syntastic'
+    Plug 'shougo/neocomplcache.vim'
+    Plug 'spf13/vim-colors'
+    Plug 'tmhedberg/matchit'
+    Plug 'tpope/vim-fugitive'
+    Plug 'vim-scripts/apachelogs.vim'
+    Plug 'vim-scripts/nginx.vim'
+    Plug 'vim-scripts/surround.vim'
+    Plug 'vim-scripts/tcomment'
+call plug#end()
 
 " ...
 

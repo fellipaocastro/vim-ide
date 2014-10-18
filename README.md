@@ -1,97 +1,116 @@
-# VIM-IDE #
+I use VIM almost every time I have to edit a plain text document, and there are a couple of good
+reasons for that. Here are some of them:
 
-Vim settings otimizado para uso com Python/Django, PHP, Javascript, HTML e CSS.
+- vim is highly customizable: there are 1000s of plugins to configure it as your taste;
+- vim is fast, very fast: you don't have to waste several minutes waiting for it to load;
+- vim is omnipresent: mac os, linux, windows, android, etc.
+
+But there's one feature really special to me: shortcuts, lots of them.
+There are shortcuts for everything, from simple copy `y/Y` and paste `p/P` operations to complex
+things like selecting a paragraph `vip/vap`. I love it!
+
+Without further delay, behold the VIM-IDE.
+
+## vim-ide
+
+Optimized for Python/Django, PHP, Javascript/Node.js, HTML, CSS.
 
 ![vim-ide](https://github.com/rafael84/vim-ide/raw/master/img/overview.png)
 
+### pre-requisites
 
-## PRÉ-REQUISITOS ##
+**Ubuntu:**
 
     sudo apt-get install exuberant-ctags
 
+**OSX:**
 
-## INSTALAÇÃO ##
+    brew install ctags-exuberant
+
+
+### installation
  
-1. Faça um clone do projeto para ~/.vim-ide e inicialize os sub-módulos:
+1. clone the git repository to `~/.vim-ide`:
         
+        :::sh
         git clone https://github.com/rafael84/vim-ide.git ~/.vim-ide
-        cd ~/.vim-ide && git submodule init && git submodule update
         
-2. Crie links simbólicos para o arquivo .vimrc e para o diretório .vim:
+2. create symbolic links to `.vimrc` and `.vim`:
 
+        :::sh
         ln -snf ~/.vim-ide/vimrc ~/.vimrc
         ln -snf ~/.vim-ide/vim ~/.vim
 
-3. Instale o Vudle para gerenciamento dos plugins
+3. install the plugins using Vim-Plug, a vim's plugin manager:
 
-        vim +BundleInstall +qall
+        :::sh
+        vim +PlugInstall +qall
 
-4. Obrigado por voar com o Vim!
-
-
-OBS.: Para atualizar uma instalação já existente, o melhor é remover o diretório ~/.vim-ide e 
-repetir os passos 1 a 4, listados acima.
+4. thanks for flying with vim!
 
 
-## CUSTOMIZAÇÃO ##
+#### note:
+To update an existing installation, best approach is to delete the `~/.vim-ide` and then repeat the
+steps 1-4, listed above.
 
-Caso deseje sobrescrever alguma configuração, crie um arquivo .vimrc_extra no seu diretório home,
-isto é: 
+### how to customize it
 
+If you want to overwrite any setting, first create a file named `.vimrc_extra` at your home
+directory, e.g:
+
+    :::sh
     touch ~/.vimrc_extra
     
-Este arquivo, caso exista, será carregado após o arquivo ~/.vimrc. Assim, você evita possíveis
-conflitos de merge ao atualizar o seu vim-ide.
+This file, if exists, will be loaded right after the main settings file, `~/.vimrc`. By doing this
+way, you avoid merging conflicts when you update your vim-ide. 
 
-Como exemplo de customização, você poderia alterar o esquema de cores:
+Just as an example, here's how to change the color scheme:
 
+    :::sh
     echo "silent!colorscheme elflord" >> ~/.vimrc_extra
 
 
-## PLUGINS ##
+### plugins
 
-* **tpope/vim-fugitive** - Integração com GIT.
-* **Lokaltog/vim-powerline** - Barra de status incrementada.
-* **vim-scripts/surround.vim** - Diversos atalhos úteis envolvendo "surroundings": parenteses, colchetes, tags, e muito mais.
-* **vim-scripts/nginx.vim** - Highlight de configurações do NGINX.
-* **nvie/vim-flake8** - Validação de código Python.
-* **majutsushi/tagbar** - Janela que mostra a estrutura do arquivo atual (classes, funções variáveis, etc). 
-* **pangloss/vim-javascript** - Melhor tratamento para código javascript, especialmente quando este está embutido em uma página HTML.
-* **scrooloose/syntastic** - Aponta onde há problemas no código fonte atual.
-* **rstacruz/sparkup** - Disponibiliza diversos templates para arquivos HTML.
-* **vim-scripts/tComment** - Facilita comentar / descomentar blocos de código.
-* **kien/ctrlp.vim** - Excelente para achar um arquivo rapidamente, digitando caracteres que façam parte do path do mesmo.
-* **docunext/closetag.vim** - Fecha tags automaticamente, especialmente útil para páginas HTML.
-* **Rykka/riv.vim** - Excelente para se trabalhar com textos utilizando a linguagem de marcação reST.
-* **spf13/vim-colors** - Alguns colorschemes interessantes.
-* **scrooloose/nerdtree** - Facilita a manipulação de diretórios e arquivos dentro do próprio VIM.
-* **davidhalter/jedi-vim** - Auto complete inteligente.
-* **Lokaltog/vim-easymotion** - Ajuda na movimentação para um ponto específico da tela.
-* **spf13/PIV** - Facilita a vida de programadores PHP.
+* [CtrlP](http://github.com/kien/ctrlp.vim) - find files quickly
+* [closetag](http://github.com/docunext/closetag.vim) - close tags automatically. Good for HTML, XML and so on
+* [jedi-vim](http://github.com/davidhalter/jedi-vim) - smart auto complete
+* [nerdtree](http://github.com/scrooloose/nerdtree) - better file handling
+* [nginx.vim](http://github.com/vim-scripts/nginx.vim) - syntax highlight for nginx config files
+* [riv.vim](http://github.com/Rykka/riv.vim) - excellent for the reST markup language
+* [sparkup](http://github.com/rstacruz/sparkup) - several html code templates
+* [surround.vim](http://github.com/vim-scripts/surround.vim) - lots of useful commands regargind "surround" operations: parenthesis, brackets, tags and much more
+* [syntastic](http://github.com/scrooloose/syntastic) - warn about problems in the current source code
+* [tComment](http://github.com/vim-scripts/tComment) - easier commenting on code blocks
+* [tagbar](http://github.com/majutsushi/tagbar) - inspect window (classes, functions, variables, etc)
+* [vim-colors](http://github.com/spf13/vim-colors) - some additional colorschemes
+* [vim-easymotion](http://github.com/Lokaltog/vim-easymotion) - helps you get faster to some specific point of the window
+* [vim-flake8](http://github.com/nvie/vim-flake8) - python code validation
+* [vim-fugitive](http://github.com/tpope/vim-fugitive) - git integration
+* [vim-javascript](http://github.com/pangloss/vim-javascript) - improves javascript editing, specially within HTML pages
+* [vim-power](http://github.com/Lokaltog/vim-powerline) - better status bar
 
 
-## ATALHOS ##
+### shortcuts
 
-Modo    | Atalho                | Descrição
-:-------|:---------------------:|:------------------------------------------
-NORMAL  | ;                     | Dois pontos (para evitar o uso do SHIFT)
-INSERT  | jj                    | ESC (tem que pressionar jj rápido)
-NORMAL  | gcc                   | Comenta uma linha de código (atual)
-NORMAL  | gC                    | Comenta o bloco de código selecionado (modo VISUAL)
-NORMAL  | F2                    | Exibe/esconde a janela de diretórios e arquivos (NERDTree)
-        |                       | Para incluir, excluir ou mover um nó, pressione m
-NORMAL  | F3                    | Exibe/esconde a janela de tags (TagBa)
-NORMAL  | F7                    | Ativa o Flake8 (verificação do código Python)
-NORMAL  | ,,w                   | Ativa o plugin EasyMotion
-NORMAL  | CTRL + P              | Ativa o plugin CtrlP; ENTER para abrir o arquivo em uma nova aba
-INSERT  | Ctrl e                | Expande tags HTML (sparkup)
-NORMAL  | TAB                   | Avança a indentação do bloco selecionado (e preserva a seleção)
-NORMAL  | SHIFT + TAB           | Recua a indentação do bloco selecionado (e preserva a seleção)
-QUALQUER| CTRL + seta direita   | Vai para a aba (tab) da direita 
-QUALQUER| CTRL + seta esquerda  | Vai para a aba (tab) da esquerda 
-QUALQUER| CTRL + h              | Vai para a janela da esquerda
-QUALQUER| CTRL + l              | Vai para a janela da direita
-QUALQUER| CTRL + j              | Vai para a janela de baixo
-QUALQUER| CTRL + k              | Vai para a janela de cima
-NORMAL  | LF                    | Localiza o arquivo atual no NERDTree
-VISUAL  | Ctrl + P              | Duplica o bloco de texto selecionado no modo visual
+mode    | shortcut              | description
+--------|-----------------------|-------------------------------------------
+NORMAL  | ;                     | the same as the colon key, so that you don't need to use SHIFT
+INSERT  | jj                    | ESC (press jj quickly)
+NORMAL  | gcc                   | comment the current line of code
+NORMAL  | F2                    | toggle the NERDTree panel (directories and files)
+NORMAL  | F3                    | toggle the TagBar panel
+NORMAL  | F7                    | invoke the Flake8 (Python code verification)
+NORMAL  | ,,w                   | activate the EasyMotion (try press the H command first)
+NORMAL  | CTRL + P              | activate the CtrlP plugin; press ENTER to open the file(s) in a new tab
+INSERT  | Ctrl + e              | html code templates with Sparkup (must be editing a HTML file)
+NORMAL  | TAB                   | indent preserving visual selection
+NORMAL  | SHIFT + TAB           | unindent preserving visual selection
+ANY     | CTRL + right arrow    | go to the next tab
+ANY     | CTRL + left arrow     | go to the previuos tab
+ANY     | CTRL + h              | set the focus on the left window
+ANY     | CTRL + l              | set the focus on the right window
+ANY     | CTRL + j              | set the focus on the window below
+ANY     | CTRL + k              | set the focus on the window above
+NORMAL  | LF                    | locate the file in the NERDTree panel
+VISUAL  | Ctrl + P              | duplicate the selected block of code
