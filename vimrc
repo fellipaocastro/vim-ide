@@ -113,6 +113,7 @@ Bundle 'rodjek/vim-puppet'
 Bundle 'mileszs/ack.vim'
 Bundle "ekalinin/Dockerfile.vim"
 Bundle "lepture/vim-jinja"
+Bundle 'Valloric/MatchTagAlways'
 
 " ...
 
