@@ -84,7 +84,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
+" Bundle 'bling/vim-airline'
 Bundle 'vim-scripts/surround.vim'
 Bundle 'vim-scripts/nginx.vim'
 Bundle 'vim-scripts/apachelogs.vim'
@@ -112,6 +112,7 @@ Bundle 'othree/html5.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'mileszs/ack.vim'
 Bundle "ekalinin/Dockerfile.vim"
+Bundle "lepture/vim-jinja"
 
 " ...
 
@@ -155,11 +156,12 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['python', 'php'],
                            \ 'passive_filetypes': ['puppet'] }
 let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_flake8_post_args='--ignore=E501,E128,E225'
 
 
 " """ Vim-AirLine
 " "
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#left_sep = ' '
 " let g:airline#extensions#tabline#left_alt_sep = '|'
 
@@ -213,6 +215,9 @@ nmap LF :NERDTreeFind<CR>
 " F3 toogles TabBar
 nmap <F3> :TagbarToggle<CR>
 
+" F4 Find word in all files
+nmap <F4> :execute "vimgrep /" . expand("<cword>") . "/gj **/*.py" <Bar> cw<CR>
+
 " jj to ESC while in insert mode 
 imap jj <Esc> 
 " ; to : while in normal mode 
@@ -260,7 +265,7 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 """ vim air-line
 "
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
 """ Include ~/.vimrc_extra, if file exists
 "
