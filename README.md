@@ -14,9 +14,9 @@ Optimized for Python, PHP, Javascript, Node.js, HTML, CSS and more!
 
     brew install ctags-exuberant
 
-### installation
+### installation (do you trust me?)
  
-    curl -L https://raw.githubusercontent.com/rafael84/vim-ide/master/install.sh | bash -
+    wget -O - https://raw.githubusercontent.com/rafael84/vim-ide/master/install.sh | bash
 
 
 ### how to customize it
