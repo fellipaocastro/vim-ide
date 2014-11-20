@@ -1,97 +1,59 @@
-# VIM-IDE #
+## vim-ide
 
-Vim settings otimizado para uso com Python/Django, PHP, Javascript, HTML e CSS.
+Optimized for Python, PHP, Javascript, Node.js, HTML, CSS and more!
 
 ![vim-ide](https://github.com/rafael84/vim-ide/raw/master/img/overview.png)
 
+### pre-requisites
 
-## PRÉ-REQUISITOS ##
+**Ubuntu:**
 
     sudo apt-get install exuberant-ctags
 
+**OSX:**
 
-## INSTALAÇÃO ##
+    brew install ctags-exuberant
+
+### installation
  
-1. Faça um clone do projeto para ~/.vim-ide e inicialize os sub-módulos:
-        
-        git clone https://github.com/rafael84/vim-ide.git ~/.vim-ide
-        cd ~/.vim-ide && git submodule init && git submodule update
-        
-2. Crie links simbólicos para o arquivo .vimrc e para o diretório .vim:
-
-        ln -snf ~/.vim-ide/vimrc ~/.vimrc
-        ln -snf ~/.vim-ide/vim ~/.vim
-
-3. Instale o Vudle para gerenciamento dos plugins
-
-        vim +BundleInstall +qall
-
-4. Obrigado por voar com o Vim!
+    curl -L https://raw.githubusercontent.com/rafael84/vim-ide/master/install.sh | bash -
 
 
-OBS.: Para atualizar uma instalação já existente, o melhor é remover o diretório ~/.vim-ide e 
-repetir os passos 1 a 4, listados acima.
+### how to customize it
 
-
-## CUSTOMIZAÇÃO ##
-
-Caso deseje sobrescrever alguma configuração, crie um arquivo .vimrc_extra no seu diretório home,
-isto é: 
+If you want to overwrite any setting, first create a file named `.vimrc_extra` at your home
+directory, e.g:
 
     touch ~/.vimrc_extra
     
-Este arquivo, caso exista, será carregado após o arquivo ~/.vimrc. Assim, você evita possíveis
-conflitos de merge ao atualizar o seu vim-ide.
+This file, if exists, will be loaded right after the main settings file, `~/.vimrc`. By doing this
+way, you avoid merging conflicts when you update your vim-ide. 
 
-Como exemplo de customização, você poderia alterar o esquema de cores:
+Just as an example, here's how to change the color scheme:
 
     echo "silent!colorscheme elflord" >> ~/.vimrc_extra
 
 
-## PLUGINS ##
+### shortcuts
 
-* **tpope/vim-fugitive** - Integração com GIT.
-* **Lokaltog/vim-powerline** - Barra de status incrementada.
-* **vim-scripts/surround.vim** - Diversos atalhos úteis envolvendo "surroundings": parenteses, colchetes, tags, e muito mais.
-* **vim-scripts/nginx.vim** - Highlight de configurações do NGINX.
-* **nvie/vim-flake8** - Validação de código Python.
-* **majutsushi/tagbar** - Janela que mostra a estrutura do arquivo atual (classes, funções variáveis, etc). 
-* **pangloss/vim-javascript** - Melhor tratamento para código javascript, especialmente quando este está embutido em uma página HTML.
-* **scrooloose/syntastic** - Aponta onde há problemas no código fonte atual.
-* **rstacruz/sparkup** - Disponibiliza diversos templates para arquivos HTML.
-* **vim-scripts/tComment** - Facilita comentar / descomentar blocos de código.
-* **kien/ctrlp.vim** - Excelente para achar um arquivo rapidamente, digitando caracteres que façam parte do path do mesmo.
-* **docunext/closetag.vim** - Fecha tags automaticamente, especialmente útil para páginas HTML.
-* **Rykka/riv.vim** - Excelente para se trabalhar com textos utilizando a linguagem de marcação reST.
-* **spf13/vim-colors** - Alguns colorschemes interessantes.
-* **scrooloose/nerdtree** - Facilita a manipulação de diretórios e arquivos dentro do próprio VIM.
-* **davidhalter/jedi-vim** - Auto complete inteligente.
-* **Lokaltog/vim-easymotion** - Ajuda na movimentação para um ponto específico da tela.
-* **spf13/PIV** - Facilita a vida de programadores PHP.
-
-
-## ATALHOS ##
-
-Modo    | Atalho                | Descrição
-:-------|:---------------------:|:------------------------------------------
-NORMAL  | ;                     | Dois pontos (para evitar o uso do SHIFT)
-INSERT  | jj                    | ESC (tem que pressionar jj rápido)
-NORMAL  | gcc                   | Comenta uma linha de código (atual)
-NORMAL  | gC                    | Comenta o bloco de código selecionado (modo VISUAL)
-NORMAL  | F2                    | Exibe/esconde a janela de diretórios e arquivos (NERDTree)
-        |                       | Para incluir, excluir ou mover um nó, pressione m
-NORMAL  | F3                    | Exibe/esconde a janela de tags (TagBa)
-NORMAL  | F7                    | Ativa o Flake8 (verificação do código Python)
-NORMAL  | ,,w                   | Ativa o plugin EasyMotion
-NORMAL  | CTRL + P              | Ativa o plugin CtrlP; ENTER para abrir o arquivo em uma nova aba
-INSERT  | Ctrl e                | Expande tags HTML (sparkup)
-NORMAL  | TAB                   | Avança a indentação do bloco selecionado (e preserva a seleção)
-NORMAL  | SHIFT + TAB           | Recua a indentação do bloco selecionado (e preserva a seleção)
-QUALQUER| CTRL + seta direita   | Vai para a aba (tab) da direita 
-QUALQUER| CTRL + seta esquerda  | Vai para a aba (tab) da esquerda 
-QUALQUER| CTRL + h              | Vai para a janela da esquerda
-QUALQUER| CTRL + l              | Vai para a janela da direita
-QUALQUER| CTRL + j              | Vai para a janela de baixo
-QUALQUER| CTRL + k              | Vai para a janela de cima
-NORMAL  | LF                    | Localiza o arquivo atual no NERDTree
-VISUAL  | Ctrl + P              | Duplica o bloco de texto selecionado no modo visual
+mode    | shortcut              | description
+--------|-----------------------|-------------------------------------------
+NORMAL  | ;                     | the same as the colon key, so that you don't need to use SHIFT
+INSERT  | jj                    | ESC (press jj quickly)
+NORMAL  | gcc                   | comment the current line of code
+NORMAL  | F2                    | toggle the NERDTree panel (directories and files)
+NORMAL  | F3                    | toggle the TagBar panel
+NORMAL  | F7                    | invoke the Flake8 (Python code verification)
+NORMAL  | ,,w                   | activate the EasyMotion (try press the H command first)
+NORMAL  | CTRL + P              | activate the CtrlP plugin; press ENTER to open the file(s) in a new tab
+INSERT  | Ctrl + e              | html code templates with Sparkup (must be editing a HTML file)
+NORMAL  | TAB                   | indent preserving visual selection
+NORMAL  | SHIFT + TAB           | unindent preserving visual selection
+ANY     | CTRL + right arrow    | go to the next tab
+ANY     | CTRL + left arrow     | go to the previuos tab
+ANY     | CTRL + h              | set the focus on the left window
+ANY     | CTRL + l              | set the focus on the right window
+ANY     | CTRL + j              | set the focus on the window below
+ANY     | CTRL + k              | set the focus on the window above
+NORMAL  | LF                    | locate the file in the NERDTree panel
+VISUAL  | Ctrl + P              | duplicate the selected block of code
