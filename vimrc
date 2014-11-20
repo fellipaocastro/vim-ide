@@ -76,50 +76,54 @@ set foldlevel=99
 
 """ VUNDLE
 "
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " My Bundles here:
 "
-Bundle 'tpope/vim-fugitive'
-" Bundle 'bling/vim-airline'
-Bundle 'vim-scripts/surround.vim'
-Bundle 'vim-scripts/nginx.vim'
-Bundle 'vim-scripts/apachelogs.vim'
-Bundle 'nvie/vim-flake8'
-Bundle 'majutsushi/tagbar'
-Bundle 'pangloss/vim-javascript'
-Bundle 'scrooloose/syntastic'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'vim-scripts/tComment'
-Bundle 'kien/ctrlp.vim'
-Bundle 'docunext/closetag.vim'
-Bundle 'Rykka/riv.vim'
-Bundle 'spf13/vim-colors'
-Bundle 'scrooloose/nerdtree'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Shougo/neocomplcache.vim'
-Bundle 'othree/javascript-libraries-syntax.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'groenewege/vim-less'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'tmhedberg/matchit'
-Bundle 'junegunn/vim-easy-align'
-Bundle 'othree/html5.vim'
-Bundle 'rodjek/vim-puppet'
-Bundle 'mileszs/ack.vim'
-Bundle "ekalinin/Dockerfile.vim"
-Bundle "lepture/vim-jinja"
-Bundle 'Valloric/MatchTagAlways'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'vim-scripts/surround.vim'
+Plugin 'vim-scripts/nginx.vim'
+Plugin 'vim-scripts/apachelogs.vim'
+Plugin 'nvie/vim-flake8'
+Plugin 'majutsushi/tagbar'
+Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/syntastic'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'vim-scripts/tComment'
+Plugin 'kien/ctrlp.vim'
+Plugin 'docunext/closetag.vim'
+Plugin 'Rykka/clickable.vim'
+Plugin 'Rykka/clickable-things'
+Plugin 'Rykka/os.vim'
+Plugin 'Rykka/riv.vim'
+Plugin 'spf13/vim-colors'
+Plugin 'scrooloose/nerdtree'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Shougo/neocomplcache.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'groenewege/vim-less'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'tmhedberg/matchit'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'othree/html5.vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'mileszs/ack.vim'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'lepture/vim-jinja'
+Plugin 'Valloric/MatchTagAlways'
 
+call vundle#end()
+filetype plugin indent on     " required!
 " ...
 
-filetype on
-filetype plugin indent on     " required!
 
+filetype on
 
 """ Vim-Easy-Align
 "
@@ -160,11 +164,11 @@ let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_post_args='--ignore=E501,E128,E225'
 
 
-" """ Vim-AirLine
-" "
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#tabline#left_sep = ' '
-" let g:airline#extensions#tabline#left_alt_sep = '|'
+""" Vim-AirLine
+"
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 
 """ NERDTree
