@@ -117,6 +117,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'lepture/vim-jinja'
 Plugin 'Valloric/MatchTagAlways'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on     " required!

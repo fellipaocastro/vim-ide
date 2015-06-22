@@ -1,6 +1,6 @@
 ## vim-ide
 
-Optimized for Python, PHP, Javascript, Node.js, HTML, CSS and more!
+Optimized for Python, Go, PHP, Javascript, Node.js, HTML, CSS and more!
 
 ![vim-ide](https://github.com/rafael84/vim-ide/raw/master/img/overview.png)
 
