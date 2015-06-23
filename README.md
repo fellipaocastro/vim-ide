@@ -16,7 +16,7 @@ Optimized for Python, Go, PHP, Javascript, Node.js, HTML, CSS and more!
 
 ### installation (do you trust me?)
  
-    wget -O - https://raw.githubusercontent.com/rafael84/vim-ide/master/install.sh | bash
+    wget -O - https://raw.githubusercontent.com/fellipecastro/vim-ide/master/install.sh | bash
 
 
 ### how to customize it
