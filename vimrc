@@ -118,6 +118,9 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'lepture/vim-jinja'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'fatih/vim-go'
+Plugin 'klen/python-mode'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
 
 call vundle#end()
 filetype plugin indent on     " required!
