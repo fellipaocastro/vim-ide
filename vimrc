@@ -123,6 +123,7 @@ Plugin 'fatih/vim-go'
 Plugin 'klen/python-mode'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on     " required!
@@ -290,3 +291,7 @@ let g:sql_type_default = 'pgsql'
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_filepath_completion_use_working_dir = 1
