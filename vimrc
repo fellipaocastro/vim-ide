@@ -117,6 +117,8 @@ Plugin 'mileszs/ack.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'lepture/vim-jinja'
 Plugin 'Valloric/MatchTagAlways'
+Plugin 'vim-scripts/c.vim'
+Plugin 'exu/pgsql.vim'
 Plugin 'fatih/vim-go'
 Plugin 'klen/python-mode'
 Plugin 'vim-ruby/vim-ruby'
@@ -282,3 +284,9 @@ let vimrc_extra=expand("~/.vimrc_extra")
 if filereadable(vimrc_extra)
     exec ":source " . vimrc_extra
 endif
+
+let g:sql_type_default = 'pgsql'
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
