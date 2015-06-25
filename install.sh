@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/fellipecastro/vim-ide.git ~/.vim-ide
+#git clone https://github.com/fellipecastro/vim-ide.git ~/.vim-ide
 mkdir -p ~/.vim-ide/vim/bundle
 ln -snf ~/.vim-ide/vimrc ~/.vimrc
 ln -snf ~/.vim-ide/vim ~/.vim
