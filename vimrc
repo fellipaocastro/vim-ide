@@ -121,7 +121,7 @@ Plugin 'vim-scripts/c.vim'
 Plugin 'exu/pgsql.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
-" Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 
 call vundle#end()
 filetype plugin indent on     " required!
