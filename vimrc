@@ -292,3 +292,6 @@ let g:go_highlight_structs = 1
 let g:go_fmt_command = "goimports"
 
 au FileType ruby set ts=2
+au FileType ruby set shiftwidth=2
+au FileType ruby set ai
+au FileType ruby set si
