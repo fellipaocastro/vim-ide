@@ -295,3 +295,5 @@ au FileType ruby set ts=2
 au FileType ruby set shiftwidth=2
 au FileType ruby set ai
 au FileType ruby set si
+
+command! -nargs=1 WED :w %:h/<args> | :e %:h/<args>
