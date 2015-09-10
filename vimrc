@@ -122,6 +122,8 @@ Plugin 'exu/pgsql.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 filetype plugin indent on     " required!
