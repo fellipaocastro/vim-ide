@@ -194,7 +194,7 @@ let g:ctrlp_working_path_mode = '0'
 
 """ NeoComplCache
 "
-" let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 1
 
 
 """ Colors
