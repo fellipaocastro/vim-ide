@@ -14,7 +14,7 @@ set ruler                   	" show the cursor position all the time
 set backspace=2             	" Allow backspacing over autoindent, EOL, and BOL 
 set nowrap                  	" don't wrap text
 set linebreak               	" don't wrap textin the middle of a word
-set autoindent              	" always set autoindenting on
+set autoindent              	" always set autoindenting onco
 set smartindent             	" use smart indent if there is no indent file
 set tabstop=4               	" <tab> inserts 4 spaces 
 set shiftwidth=4            	" but an indent level is 2 spaces wide.
@@ -199,8 +199,8 @@ let g:neocomplcache_enable_at_startup = 1
 
 """ Colors
 "
-" silent!colorscheme molokai
-silent!colorscheme gruvbox
+silent!colorscheme molokai
+" silent!colorscheme gruvbox
 set background=dark
 set colorcolumn=99
 set t_Co=256
