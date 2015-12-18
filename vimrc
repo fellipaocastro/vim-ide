@@ -124,7 +124,6 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'airblade/vim-gitgutter'
-Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 filetype plugin indent on     " required!
@@ -200,8 +199,6 @@ let g:neocomplcache_enable_at_startup = 1
 """ Colors
 "
 silent!colorscheme molokai
-" silent!colorscheme gruvbox
-set background=dark
 set colorcolumn=99
 set t_Co=256
 syntax on
