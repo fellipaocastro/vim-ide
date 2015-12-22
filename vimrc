@@ -277,7 +277,7 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 """ vim air-line
 "
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 
 """ Include ~/.vimrc_extra, if file exists
 "
