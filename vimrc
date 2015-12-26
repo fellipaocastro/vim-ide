@@ -210,6 +210,7 @@ hi TabLineFill ctermfg=LightGray ctermbg=Black
 hi TabLine ctermfg=Gray ctermbg=Black
 hi TabLineSel ctermfg=White ctermbg=Red
 hi CursorLine term=bold cterm=bold guibg=Grey40
+hi Search guifg=#000000 guibg=#FFFFE0 ctermfg=Black ctermbg=LightYellow cterm=NONE
 hi visual ctermfg=black ctermbg=lightblue
 
 
