@@ -123,6 +123,7 @@ Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-endwise'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
