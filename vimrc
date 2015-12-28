@@ -125,7 +125,6 @@ Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-endwise'
 Plugin 'Townk/vim-autoclose'
-Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
