@@ -215,11 +215,7 @@ hi TabLineSel ctermfg=White ctermbg=Red
 hi CursorLine term=bold cterm=bold guibg=Grey40
 hi Search guifg=#000000 guibg=#FFFFE0 ctermfg=Black ctermbg=LightYellow cterm=NONE
 hi visual ctermfg=black ctermbg=lightblue
-
-
-""" Disable Match Paren
-"
-let loaded_matchparen = 1
+hi MatchParen cterm=underline ctermbg=none ctermfg=none
 
 
 """ Key Mappings
