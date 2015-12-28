@@ -125,7 +125,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-endwise'
 Plugin 'Townk/vim-autoclose'
-Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'luochen1990/rainbow'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
@@ -310,8 +310,4 @@ au FileType eruby set si
 
 let g:syntastic_ruby_checkers = ['rubocop', 'ruby-lint']
 
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-au Syntax * RainbowParenthesesLoadChevrons
+let g:rainbow_active = 1
