@@ -3,7 +3,7 @@ vim-ide
 
 Vim IDE
 
-.. image:: https://github.com/rafael84/vim-ide/raw/master/img/overview.png
+.. image:: https://github.com/fellipecastro/raw/master/img/preview.png
 
 Setup
 -----
