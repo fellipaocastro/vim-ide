@@ -309,3 +309,9 @@ au FileType eruby set ai
 au FileType eruby set si
 
 let g:syntastic_ruby_checkers = ['rubocop', 'ruby-lint']
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+au Syntax * RainbowParenthesesLoadChevrons
