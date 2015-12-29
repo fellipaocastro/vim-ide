@@ -73,6 +73,10 @@ set noswapfile
 set foldlevel=99
 
 
+set list
+set listchars=eol:¬,tab:>-,trail:·
+
+
 
 """ VUNDLE
 "
