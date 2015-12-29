@@ -214,7 +214,7 @@ set colorcolumn=99
 set t_Co=256
 syntax on
 set cursorline
-hi ColorColumn ctermbg=red guibg=red
+" hi ColorColumn ctermbg=red guibg=red
 hi TabLineFill ctermfg=LightGray ctermbg=Black
 hi TabLine ctermfg=Gray ctermbg=Black
 hi TabLineSel ctermfg=White ctermbg=Red
