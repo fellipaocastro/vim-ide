@@ -204,6 +204,7 @@ let g:neocomplete#enable_at_startup = 1
 "
 silent!colorscheme railscasts
 " silent!colorscheme molokai
+" silent!colorscheme dracula
 set colorcolumn=99
 set t_Co=256
 syntax on
