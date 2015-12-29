@@ -1,8 +1,8 @@
 #!/bin/bash
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-  sudo apt-get install vim exuberant-ctags -y
+  sudo apt-get install exuberant-ctags vim vim-nox -y
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-  brew install vim ctags-exuberant
+  brew install ctags-exuberant vim --with-lua
 fi
 git clone https://github.com/fellipecastro/vim-ide.git ~/.vim-ide
 mkdir -p ~/.vim-ide/.vim/bundle
