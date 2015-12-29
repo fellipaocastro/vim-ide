@@ -1,9 +1,9 @@
 set nocompatible                " be iMproved
 filetype off                    " required!
-let mapleader=","	           	  " change the leader to be a comma vs slash 
-set laststatus=2   		          " Always show the statusline
-set encoding=utf-8 		          " Necessary to show Unicode glyphs
-set hidden			                " makes vim work like every other multiple-file editor
+let mapleader=","               " change the leader to be a comma vs slash 
+set laststatus=2                " Always show the statusline
+set encoding=utf-8              " Necessary to show Unicode glyphs
+set hidden                      " makes vim work like every other multiple-file editor
 set title                       " show title in console title bar
 set number                      " Display line numbers
 set numberwidth=1               " using only 1 column (and 1 space) while possible
