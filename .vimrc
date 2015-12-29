@@ -8,9 +8,9 @@ set title                       " show title in console title bar
 set number                      " Display line numbers
 set numberwidth=1               " using only 1 column (and 1 space) while possible
 set wildmenu                  	" Menu completion in command mode on <Tab>
-set wildmode=full         	    " <Tab> cycles between all matching choices.
+set wildmode=full               " <Tab> cycles between all matching choices.
 set grepprg=ack                 " replace the default grep program with ack
-set ruler                 	    " show the cursor position all the time
+set ruler                       " show the cursor position all the time
 set backspace=2               	" Allow backspacing over autoindent, EOL, and BOL 
 set nowrap                    	" don't wrap text
 set linebreak                 	" don't wrap textin the middle of a word
