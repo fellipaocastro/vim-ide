@@ -156,11 +156,6 @@ autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
 autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 1
 
-""" Flake8
-"
-let g:flake8_max_line_length=99
-let g:flake8_max_complexity=10
-
 
 """ jedi-vim
 "
