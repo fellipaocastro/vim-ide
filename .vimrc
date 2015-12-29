@@ -104,7 +104,7 @@ Plugin 'spf13/vim-colors'
 Plugin 'scrooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neocomplete.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'groenewege/vim-less'
@@ -195,9 +195,9 @@ let g:ctrlp_prompt_mappings = {
     \ }
 let g:ctrlp_working_path_mode = '0'
 
-""" NeoComplCache
+""" neocomplete
 "
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplete#enable_at_startup = 1
 
 
 """ Colors
