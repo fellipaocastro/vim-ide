@@ -12,7 +12,9 @@ touch ~/.vimrc_extra
 git clone --depth 1 https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 if [[ "$SHELL" == "/bin/zsh" ]]; then
+  echo 'rehash'
   rehash
 elif [[ "$SHELL" == "/bin/bash" ]]; then
+  echo 'hash -r'
   hash -r
 fi
