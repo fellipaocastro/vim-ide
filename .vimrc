@@ -74,7 +74,7 @@ set foldlevel=99
 
 
 set list
-set listchars=eol:¬,tab:>-,trail:·
+set listchars=tab:>-,trail:·
 
 
 
