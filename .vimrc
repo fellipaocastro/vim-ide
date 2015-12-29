@@ -128,6 +128,7 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'luochen1990/rainbow'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 filetype plugin indent on     " required!
