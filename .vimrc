@@ -178,6 +178,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['puppet'] }
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_post_args='--ignore=E501,E128,E225'
+let g:syntastic_ruby_checkers = ['rubocop', 'ruby-lint']
 
 
 """ Vim-AirLine
@@ -300,8 +301,6 @@ au FileType ruby,eruby set ts=2
 au FileType ruby,eruby set shiftwidth=2
 au FileType ruby,eruby set ai
 au FileType ruby,eruby set si
-
-let g:syntastic_ruby_checkers = ['rubocop', 'ruby-lint']
 
 let g:rainbow_active = 1
 
