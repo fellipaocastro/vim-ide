@@ -1,27 +1,27 @@
-set nocompatible               	" be iMproved
-filetype off                   	" required!
-let mapleader=","	       	    " change the leader to be a comma vs slash 
-set laststatus=2   		        " Always show the statusline
-set encoding=utf-8 		        " Necessary to show Unicode glyphs
-set hidden			            " makes vim work like every other multiple-file editor
-set title                     	" show title in console title bar
-set number                    	" Display line numbers
-set numberwidth=1             	" using only 1 column (and 1 space) while possible
+set nocompatible                " be iMproved
+filetype off                    " required!
+let mapleader=","	           	  " change the leader to be a comma vs slash 
+set laststatus=2   		          " Always show the statusline
+set encoding=utf-8 		          " Necessary to show Unicode glyphs
+set hidden			                " makes vim work like every other multiple-file editor
+set title                       " show title in console title bar
+set number                      " Display line numbers
+set numberwidth=1               " using only 1 column (and 1 space) while possible
 set wildmenu                  	" Menu completion in command mode on <Tab>
-set wildmode=full             	" <Tab> cycles between all matching choices.
-set grepprg=ack         	    " replace the default grep program with ack
-set ruler                   	" show the cursor position all the time
-set backspace=2             	" Allow backspacing over autoindent, EOL, and BOL 
-set nowrap                  	" don't wrap text
-set linebreak               	" don't wrap textin the middle of a word
-set autoindent              	" always set autoindenting onco
-set smartindent             	" use smart indent if there is no indent file
-set tabstop=4               	" <tab> inserts 4 spaces 
-set shiftwidth=4            	" but an indent level is 2 spaces wide.
-set softtabstop=4           	" <BS> over an autoindent deletes both spaces.
-set expandtab               	" Use spaces, not tabs, for autoindent/tab key.
-set shiftround              	" rounds indent to a multiple of shiftwidth
-set matchpairs+=<:>         	" show matching <> (html mainly) as well
+set wildmode=full         	    " <Tab> cycles between all matching choices.
+set grepprg=ack                 " replace the default grep program with ack
+set ruler                 	    " show the cursor position all the time
+set backspace=2               	" Allow backspacing over autoindent, EOL, and BOL 
+set nowrap                    	" don't wrap text
+set linebreak                 	" don't wrap textin the middle of a word
+set autoindent                	" always set autoindenting onco
+set smartindent                 " use smart indent if there is no indent file
+set tabstop=4                 	" <tab> inserts 4 spaces 
+set shiftwidth=4              	" but an indent level is 2 spaces wide.
+set softtabstop=4             	" <BS> over an autoindent deletes both spaces.
+set expandtab                 	" Use spaces, not tabs, for autoindent/tab key.
+set shiftround                	" rounds indent to a multiple of shiftwidth
+set matchpairs+=<:>           	" show matching <> (html mainly) as well
 set lazyredraw                  " do not redraw while running macros (much faster) (LazyRedraw)
 set textwidth=99                " used by gqq or <VISUAL>gq command to format lines
 set clipboard=unnamedplus       " make vim use the system clipboard by default
