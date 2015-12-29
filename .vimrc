@@ -218,6 +218,7 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 hi Search guifg=#000000 guibg=#FFFFE0 ctermfg=Black ctermbg=LightYellow cterm=NONE
 hi visual ctermfg=black ctermbg=lightblue
 hi MatchParen cterm=underline ctermbg=none ctermfg=none
+hi SpellBad guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi SpellCap guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 
 
