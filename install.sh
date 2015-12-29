@@ -11,8 +11,8 @@ ln -snf ~/.vim-ide/.vim ~/.vim
 touch ~/.vimrc_extra
 git clone --depth 1 https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
-if [ -n "$ZSH_VERSION" ]; then
+if [[ "$SHELL" == "/bin/zsh" ]]; then
   rehash
-elif [ -n "$BASH_VERSION" ]; then
+elif [[ "$SHELL" == "/bin/bash" ]]; then
   hash -r
 fi
