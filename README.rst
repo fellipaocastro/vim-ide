@@ -10,4 +10,4 @@ Setup
 
 .. code-block:: bash
 
-    $ wget -O - http://is.gd/H4WYUh | bash
+    $ wget -NP /tmp http://is.gd/H4WYUh && source /tmp/H4WYUh
