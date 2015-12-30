@@ -23,7 +23,7 @@ set expandtab                   " Use spaces, not tabs, for autoindent/tab key.
 set shiftround                  " rounds indent to a multiple of shiftwidth
 set matchpairs+=<:>             " show matching <> (html mainly) as well
 set lazyredraw                  " do not redraw while running macros (much faster) (LazyRedraw)
-set clipboard=unnamedplus       " make vim use the system clipboard by default
+set clipboard=unnamed           " make vim use the system clipboard by default
 " set textwidth=99                " used by gqq or <VISUAL>gq command to format lines
 
 """ Mouse settings
