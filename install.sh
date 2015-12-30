@@ -1,8 +1,8 @@
 #!/bin/bash
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-  sudo apt-get install exuberant-ctags vim vim-nox -y
+    sudo apt-get install exuberant-ctags vim vim-nox -y
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-  brew install ctags-exuberant vim --with-lua --override-system-vi
+    brew install ctags-exuberant vim --with-lua --override-system-vi
 fi
 git clone https://github.com/fellipecastro/vim-ide.git ~/.vim-ide
 mkdir -p ~/.vim-ide/.vim/bundle
@@ -12,7 +12,7 @@ touch ~/.vimrc_extra
 git clone --depth 1 https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 if [[ "$SHELL" == "/bin/zsh" ]]; then
-  rehash
+    rehash
 elif [[ "$SHELL" == "/bin/bash" ]]; then
-  hash -r
+    hash -r
 fi
