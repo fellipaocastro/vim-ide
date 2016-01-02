@@ -23,8 +23,22 @@ set expandtab                   " Use spaces, not tabs, for autoindent/tab key.
 set shiftround                  " rounds indent to a multiple of shiftwidth
 set matchpairs+=<:>             " show matching <> (html mainly) as well
 set lazyredraw                  " do not redraw while running macros (much faster) (LazyRedraw)
-set clipboard=unnamed           " make vim use the system clipboard by default
 " set textwidth=99                " used by gqq or <VISUAL>gq command to format lines
+
+if has('unnamedplus')
+    " By default, Vim will not use the system clipboard when yanking/pasting to
+    " the default register. This option makes Vim use the system default
+    " clipboard.
+    " Note that on X11, there are _two_ system clipboards: the "standard" one, and
+    " the selection/mouse-middle-click one. Vim sees the standard one as register
+    " '+' (and this option makes Vim use it by default) and the selection one as
+    " '*'.
+    " See :h 'clipboard' for details.
+    set clipboard=unnamedplus,unnamed
+else
+    " Vim now also uses the selection system clipboard for default yank/paste.
+    set clipboard+=unnamed
+endif
 
 """ Mouse settings
 "
@@ -89,7 +103,7 @@ Plugin 'gmarik/Vundle.vim'
 "
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
-Plugin 'vim-scripts/surround.vim'
+Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/nginx.vim'
 Plugin 'vim-scripts/apachelogs.vim'
 Plugin 'nvie/vim-flake8'
@@ -104,7 +118,6 @@ Plugin 'Rykka/clickable.vim'
 Plugin 'Rykka/clickable-things'
 Plugin 'Rykka/os.vim'
 Plugin 'Rykka/riv.vim'
-Plugin 'spf13/vim-colors'
 Plugin 'scrooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Lokaltog/vim-easymotion'
@@ -131,6 +144,9 @@ Plugin 'tpope/vim-endwise'
 Plugin 'Townk/vim-autoclose'
 Plugin 'luochen1990/rainbow'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'vim-scripts/upAndDown'
+
+Plugin 'spf13/vim-colors'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
