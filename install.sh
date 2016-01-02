@@ -10,7 +10,7 @@ ln -snf ~/vim-ide/.vimrc ~/.vimrc
 ln -snf ~/vim-ide/vim ~/.vim
 touch ~/.vimrc_extra
 git clone --depth 1 https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
+vim +PluginInstall +qa
 if [[ "$SHELL" == "/bin/zsh" ]]; then
     rehash
 elif [[ "$SHELL" == "/bin/bash" ]]; then
