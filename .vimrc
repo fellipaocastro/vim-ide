@@ -270,6 +270,10 @@ noremap <C-j> :wincmd j<CR>
 noremap <C-k> :wincmd k<CR>
 noremap <C-l> :wincmd l<CR>
 
+nnoremap <Leader>sp :set paste<CR>
+nnoremap <Leader>snp :set nopaste<CR>
+nnoremap <Leader>sw :StripWhitespace<CR>
+
 
 " Indent/unindent highlighted block (and maintain highlight)
 "
