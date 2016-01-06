@@ -253,6 +253,8 @@ nmap <F3> :TagbarToggle<CR>
 " F4 Find word in all files
 nmap <F4> :execute "vimgrep /" . expand("<cword>") . "/gj **/*.py" <Bar> cw<CR>
 
+set pastetoggle=<F5>
+
 " jj to ESC while in insert mode
 imap jj <Esc>
 " ; to : while in normal mode
