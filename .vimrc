@@ -146,6 +146,7 @@ Plugin 'luochen1990/rainbow'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-scripts/upAndDown'
 Plugin 'tpope/vim-repeat'
+Plugin 'mhinz/vim-startify'
 
 Plugin 'spf13/vim-colors'
 Plugin 'jpo/vim-railscasts-theme'
@@ -278,6 +279,7 @@ nnoremap <Leader>n :set number<CR>
 nnoremap <Leader>nn :set nonumber<CR>
 nnoremap <Leader>sw :StripWhitespace<CR>
 nnoremap <Leader>f :echo expand('%:p')<CR>
+nnoremap <Leader>pi :PluginInstall<CR>:q<CR>
 
 " Faz os resultados da busca aparecerem no meio da tela
 nmap n nzz
