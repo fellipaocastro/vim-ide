@@ -256,6 +256,9 @@ nmap <F4> :execute "vimgrep /" . expand("<cword>") . "/gj **/*.py" <Bar> cw<CR>
 
 set pastetoggle=<F5>
 
+noremap <F6> :set invnumber<CR>
+inoremap <F6> <C-O>:set invnumber<CR>
+
 " jj to ESC while in insert mode
 imap jj <Esc>
 " ; to : while in normal mode
