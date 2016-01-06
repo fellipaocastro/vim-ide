@@ -273,6 +273,7 @@ noremap <C-l> :wincmd l<CR>
 nnoremap <Leader>sp :set paste<CR>
 nnoremap <Leader>snp :set nopaste<CR>
 nnoremap <Leader>sw :StripWhitespace<CR>
+nnoremap <Leader>f :echo expand('%:p')<CR>
 
 
 " Indent/unindent highlighted block (and maintain highlight)
