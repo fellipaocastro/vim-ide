@@ -270,10 +270,20 @@ noremap <C-j> :wincmd j<CR>
 noremap <C-k> :wincmd k<CR>
 noremap <C-l> :wincmd l<CR>
 
-nnoremap <Leader>sp :set paste<CR>
-nnoremap <Leader>snp :set nopaste<CR>
+nnoremap <Leader>p :set paste<CR>
+nnoremap <Leader>np :set nopaste<CR>
+nnoremap <Leader>n :set number<CR>
+nnoremap <Leader>nn :set nonumber<CR>
 nnoremap <Leader>sw :StripWhitespace<CR>
 nnoremap <Leader>f :echo expand('%:p')<CR>
+
+" Faz os resultados da busca aparecerem no meio da tela
+nmap n nzz
+nmap N Nzz
+nmap * *zz
+nmap # #zz
+nmap g* g*zz
+nmap g# g#zz
 
 
 " Indent/unindent highlighted block (and maintain highlight)
