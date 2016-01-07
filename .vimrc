@@ -340,6 +340,8 @@ au FileType ruby,eruby set si
 
 let g:rainbow_active = 1
 
+autocmd User Startified set buftype=
+
 """ Include ~/.vimrc_extra, if file exists
 "
 let vimrc_extra=expand("~/.vimrc_extra")
