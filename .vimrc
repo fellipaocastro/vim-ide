@@ -147,6 +147,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-scripts/upAndDown'
 Plugin 'tpope/vim-repeat'
 Plugin 'mhinz/vim-startify'
+Plugin 'vim-rubocop'
 
 Plugin 'spf13/vim-colors'
 Plugin 'jpo/vim-railscasts-theme'
@@ -258,8 +259,10 @@ nmap <F5> :e<CR>
 
 set pastetoggle=<F6>
 
-noremap <F7> :set invnumber<CR>
-inoremap <F7> <C-O>:set invnumber<CR>
+nmap <F7> :RuboCop<CR>
+
+noremap <F8> :set invnumber<CR>
+inoremap <F8> <C-O>:set invnumber<CR>
 
 " jj to ESC while in insert mode
 imap jj <Esc>
