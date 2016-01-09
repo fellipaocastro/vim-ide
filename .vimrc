@@ -271,9 +271,9 @@ nnoremap ; :
 
 " Tab navigation
 noremap <C-Right> :tabn<CR>
-inoremap <C-Right> <esc>:tabn<CR><Insert>
-noremap <C-Left> :tabprev<CR>
-inoremap <C-Left> <ESC>tabprev<CR><Insert>
+inoremap <C-Right> <ESC>:tabn<CR><Insert>
+noremap <C-Left> :tabp<CR>
+inoremap <C-Left> <ESC>tabp<CR><Insert>
 
 " Window navigation
 noremap <C-h> :wincmd h<CR>
