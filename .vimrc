@@ -281,12 +281,9 @@ noremap <C-j> :wincmd j<CR>
 noremap <C-k> :wincmd k<CR>
 noremap <C-l> :wincmd l<CR>
 
-nnoremap <Leader>p :set paste<CR>
-nnoremap <Leader>np :set nopaste<CR>
-nnoremap <Leader>n :set number<CR>
-nnoremap <Leader>nn :set nonumber<CR>
+nnoremap <Leader>f :set filetype?<CR>
 nnoremap <Leader>sw :StripWhitespace<CR>
-nnoremap <Leader>f :echo expand('%:p')<CR>
+nnoremap <Leader>p :echo expand('%:p')<CR>
 nnoremap <Leader>pi :PluginInstall<CR>:q<CR>
 
 " Faz os resultados da busca aparecerem no meio da tela
