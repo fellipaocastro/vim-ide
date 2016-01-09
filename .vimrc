@@ -147,7 +147,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-scripts/upAndDown'
 Plugin 'tpope/vim-repeat'
 Plugin 'mhinz/vim-startify'
-Plugin 'vim-rubocop'
+Plugin 'ngmy/vim-rubocop'
 
 Plugin 'spf13/vim-colors'
 Plugin 'jpo/vim-railscasts-theme'
