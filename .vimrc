@@ -214,6 +214,7 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 let g:ctrlp_working_path_mode = '0'
+let g:ctrlp_show_hidden = 1
 
 """ neocomplete
 "
