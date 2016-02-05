@@ -286,6 +286,7 @@ nnoremap <Leader>f :set filetype?<CR>
 nnoremap <Leader>sw :StripWhitespace<CR>
 nnoremap <Leader>p :echo expand('%:p')<CR>
 nnoremap <Leader>pi :PluginInstall<CR>:q<CR>
+nnoremap <Leader>h :noh<CR>
 
 " Faz os resultados da busca aparecerem no meio da tela
 nmap n nzz
