@@ -148,6 +148,7 @@ Plugin 'vim-scripts/upAndDown'
 Plugin 'tpope/vim-repeat'
 Plugin 'mhinz/vim-startify'
 Plugin 'ngmy/vim-rubocop'
+Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'spf13/vim-colors'
 Plugin 'jpo/vim-railscasts-theme'
