@@ -266,6 +266,8 @@ nmap <F7> :RuboCop<CR>
 noremap <F8> :set invnumber<CR>
 inoremap <F8> <C-O>:set invnumber<CR>
 
+nmap <F9> :GitGutterToggle<CR>
+
 " jj to ESC while in insert mode
 imap jj <Esc>
 " ; to : while in normal mode
