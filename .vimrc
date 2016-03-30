@@ -189,7 +189,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=0
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetypes': ['python', 'php'],
+                           \ 'active_filetypes': ['python', 'ruby', 'php'],
                            \ 'passive_filetypes': ['puppet'] }
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_post_args='--ignore=E501,E128,E225'
