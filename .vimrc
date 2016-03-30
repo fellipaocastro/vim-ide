@@ -219,7 +219,7 @@ let g:ctrlp_show_hidden = 1
 
 """ neocomplete
 "
-let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_at_startup = 0
 
 
 """ Colors
