@@ -343,7 +343,7 @@ au FileType ruby,eruby set shiftwidth=2
 au FileType ruby,eruby set ai
 au FileType ruby,eruby set si
 au FileType ruby,eruby syn keyword Debug byebug
-au FileType ruby,eruby hi Debug ctermfg=yellow
+au FileType ruby,eruby hi Debug ctermfg=175
 
 let g:rainbow_active = 1
 
