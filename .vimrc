@@ -149,6 +149,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'mhinz/vim-startify'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'klen/python-mode'
 
 Plugin 'spf13/vim-colors'
 Plugin 'jpo/vim-railscasts-theme'
@@ -342,8 +343,12 @@ au FileType ruby,eruby set ts=2
 au FileType ruby,eruby set shiftwidth=2
 au FileType ruby,eruby set ai
 au FileType ruby,eruby set si
-au FileType ruby,eruby syn keyword Debug byebug
 au FileType ruby,eruby hi Debug ctermfg=175
+" au FileType ruby,eruby syn keyword Debug byebug
+
+" Make those debugger statements painfully obvious
+au BufEnter *.rb syn match error contained "\<byebug\>"
+au BufEnter *.rb syn match error contained "\<binding.pry\>"
 
 let g:rainbow_active = 1
 
