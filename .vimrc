@@ -149,7 +149,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'mhinz/vim-startify'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
 
 Plugin 'spf13/vim-colors'
 Plugin 'jpo/vim-railscasts-theme'
