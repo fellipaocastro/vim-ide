@@ -323,6 +323,12 @@ augroup vimrc_autocmds
 augroup END
 
 
+let g:pymode_options_max_line_length = 99
+
+
+let g:vimrubocop_config = '~/dotfiles/.rubocop.yml'
+
+
 """ Silver Searcher
 " https://github.com/ggreer/the_silver_searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
