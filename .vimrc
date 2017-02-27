@@ -320,7 +320,7 @@ augroup vimrc_autocmds
     autocmd FileType python,ruby,javascript highlight Excess ctermbg=Black guibg=Black
     autocmd FileType python,ruby,javascript match Excess /\%99v.*/
     autocmd FileType python,ruby,javascript set nowrap
-    
+
     autocmd FileType python map <Leader>b <CR>Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
     autocmd FileType ruby map <Leader>b <CR>Obyebug # BREAKPOINT<C-c>
     autocmd FileType javascript map <Leader>b <CR>Odebugger; # BREAKPOINT<C-c>
