@@ -111,7 +111,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'vim-scripts/tComment'
+Plugin 'tpope/vim-commentary'
 Plugin 'kien/ctrlp.vim'
 Plugin 'docunext/closetag.vim'
 Plugin 'Rykka/clickable.vim'
