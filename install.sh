@@ -8,6 +8,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install python
     brew install ruby
     brew install perl
+    brew install lua
     brew install vim --with-override-system-vi --with-lua
 fi
 
