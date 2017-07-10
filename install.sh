@@ -5,7 +5,10 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     sudo apt-get install exuberant-ctags vim vim-nox -y
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install ctags-exuberant
-    brew install vim --with-override-system-vi
+    brew install python
+    brew install ruby
+    brew install perl
+    brew install vim --with-override-system-vi --with-lua
 fi
 
 git clone https://github.com/fellipecastro/vim-ide.git ~/vim-ide
