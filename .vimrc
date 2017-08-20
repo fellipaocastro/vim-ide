@@ -151,6 +151,7 @@ Plugin 'ngmy/vim-rubocop'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'burnettk/vim-angular'
+Plugin 'leafgarland/typescript-vim'
 " Plugin 'klen/python-mode'
 
 Plugin 'spf13/vim-colors'
