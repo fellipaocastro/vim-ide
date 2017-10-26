@@ -1,3 +1,5 @@
+let mapleader=","               " change the leader to be a comma vs slash
+
 nnoremap ; :
 nnoremap <Leader>f :set filetype?<CR>
 nnoremap <Leader>sw :StripWhitespace<CR>
