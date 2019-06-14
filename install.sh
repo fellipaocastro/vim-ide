@@ -9,7 +9,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install ruby
     brew install perl
     brew install lua
-    brew install vim --with-override-system-vi --with-lua
+    brew install vim
 fi
 
 git clone https://github.com/fellipecastro/vim-ide.git ~/vim-ide
