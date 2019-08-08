@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf ~/.vim
 rm -rf ~/vim-ide
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
