@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo rm -rf ~/.vim
-rm -rf ~/vim-ide
+sudo rm -rf ~/vim-ide
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     sudo apt-get install exuberant-ctags vim vim-nox -y
