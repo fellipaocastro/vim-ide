@@ -156,7 +156,7 @@ Plugin 'leafgarland/typescript-vim'
 
 Plugin 'spf13/vim-colors'
 Plugin 'jpo/vim-railscasts-theme'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'dracula/vim', { 'as': 'dracula' }
 
 call vundle#end()
 filetype plugin indent on     " required!
@@ -228,9 +228,9 @@ let g:neocomplete#enable_at_startup = 0
 
 """ Colors
 "
-silent!colorscheme railscasts
+" silent!colorscheme railscasts
 " silent!colorscheme molokai
-" silent!colorscheme dracula
+silent!colorscheme dracula
 set colorcolumn=100
 set t_Co=256
 syntax on
