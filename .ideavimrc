@@ -6,3 +6,5 @@ nnoremap <Leader>sw :StripWhitespace<CR>
 nnoremap <Leader>p :echo expand('%:p')<CR>
 nnoremap <Leader>h :noh<CR>
 nmap gcc :action CommentByLineComment<cr>
+
+set clipboard=unnamedplus
